@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>USGS Stream Gauge Locations</title>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <script src="https://unpkg.com/elm-pep" type="module"></script>
+    <style>
+      .map {
+        width: 100%;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>USGS Stream Gauge Locations</h3>
+    <p>
+      This map displays USGS stream gauge locations where the National Water
+      Model assimilates streamflow observations. By clicking on points on the
+      map you can obtain metadata for stream gauge locations including USGS site
+      codes and associated NWM Reach ids. It uses the following web service:
+      https://mapservices.weather.noaa.gov/static/rest/services/nws_reference_maps/USGS_Stream_Gauges/MapServer
+    </p>
+    <div id="map" class="map"></div>
+    <div id="info">&nbsp;</div>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
